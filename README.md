@@ -1,10 +1,12 @@
-# smithTexureUpscale
-plugin for texture upscaling
+# smithTextureUpscale.dll
 
-Implements https://github.com/bahstrike/SmithPlugin
-as a plugin DLL.
+## plugin for texture upscaling
 
-Implements the following algorithm:
+Implements https://github.com/bahstrike/SmithPlugin as a unique plugin DLL.
+
+_you can test a custom one too by exporting **OnProcessTexture** in a valid smith plugin DLL (refer to smith.h)_
+
+## this experiment implements the following algorithm:
 ```
 /*
  * XBR filter extracted from FFmpeg into a separate library.
