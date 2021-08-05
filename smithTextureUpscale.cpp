@@ -33,12 +33,14 @@ extern "C"
 	}
 
 
-	void __cdecl OnProcessTexture(void* input, int inWidth, int inHeight, int inStride, void* output, int outStride)
+	int __cdecl OnProcessTexture(void* input, int inWidth, int inHeight, int inStride, void* output, int outStride)
 	{
 		if (smith == nullptr)
-			return;
+			return false;
 
 		Process(input, inWidth, inHeight, inStride, output, outStride);
+
+		return true;
 	}
 
 
