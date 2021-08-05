@@ -3,3 +3,4 @@ EXPORTS
 	SmithQueryPlugin
 	InitializePlugin
 	ShutdownPlugin
+	OnProcessTexture

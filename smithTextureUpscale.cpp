@@ -19,7 +19,6 @@ extern "C"
 	{
 		smith = _smith;
 
-		//MessageBox(0, "xbr init", 0, 0);
 		Init();
 
 
@@ -33,6 +32,14 @@ extern "C"
 		smith = nullptr;
 	}
 
+
+	void __cdecl OnProcessTexture(void* input, int inWidth, int inHeight, int inStride, void* output, int outStride)
+	{
+		if (smith == nullptr)
+			return;
+
+		Process(input, inWidth, inHeight, inStride, output, outStride);
+	}
 
 
 }
