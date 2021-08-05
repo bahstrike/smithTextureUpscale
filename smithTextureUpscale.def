@@ -1,0 +1,5 @@
+LIBRARY "smithTextureUpscale"
+EXPORTS
+	SmithQueryPlugin
+	InitializePlugin
+	ShutdownPlugin
