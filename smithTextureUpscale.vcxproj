@@ -145,9 +145,11 @@ copy $(OutputPath)\smithTextureUpscale.dll c:\smith\bin\release\</Command>
   <ItemGroup>
     <ClInclude Include="resource.h" />
     <ClInclude Include="smith.h" />
+    <ClInclude Include="xbr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="smithTextureUpscale.cpp" />
+    <ClCompile Include="xbr.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />

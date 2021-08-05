@@ -1,4 +1,5 @@
 #include "smith.h"
+#include "xbr.h"
 
 extern "C"
 {
@@ -18,27 +19,20 @@ extern "C"
 	{
 		smith = _smith;
 
-		MessageBox(0, 0, 0, 0);
+		//MessageBox(0, "xbr init", 0, 0);
+		Init();
+
 
 		return true;
 	}
 
 	void __cdecl ShutdownPlugin()
 	{
+		Shutdown();
 
 		smith = nullptr;
 	}
 
 
-
-// once the session is over, smith will call ShutdownPlugin to allow you to gracefully tie up any loose ends.
-// generally, this will be followed by actually unloading this plugin DLL; however that's not gauranteed.
-// if smith supports a more dynamic plugin load/unload system then its possible sessions can be started/stopped
-// multiple times without the plugin being unloaded. so bear that in mind:  plz do not leak.
-// 
-// long story short;  kill any possible tasks you have that may either call smith API, or expect to be called by smith API.
-// forget the SMITHCALLS interface; its not gauranteed to be valid anymore.
-// the only functions smith will call after this point is either SmithQueryPlugin, or InitializePlugin again.
-//void __cdecl ShutdownPlugin()
 
 }
