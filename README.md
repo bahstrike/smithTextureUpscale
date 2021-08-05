@@ -1,8 +1,10 @@
 # smithTexureUpscale
 plugin for texture upscaling
 
+Implements https://github.com/bahstrike/SmithPlugin
+as a plugin DLL.
 
-
+Implements the following algorithm:
 ```
 /*
  * XBR filter extracted from FFmpeg into a separate library.
