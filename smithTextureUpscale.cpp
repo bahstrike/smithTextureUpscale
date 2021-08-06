@@ -7,10 +7,12 @@ extern "C"
 
 	int __cdecl SmithQueryPlugin(PLUGININFO& p)
 	{
+		strcpy(p.name, "Texture Upscale");
 		strcpy(p.author, "bahstrike");
 		strcpy(p.desc, "Provides texture upscaling support");
 		p.smithRequiredVer = SMITHVERSION;
 		p.ver = 100;
+		p.purpose = PP_TEXTUREUPSCALE;
 
 		return 1337;
 	}
