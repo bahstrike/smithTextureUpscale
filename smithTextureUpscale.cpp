@@ -9,7 +9,10 @@ extern "C"
 	{
 		strcpy(p.name, "Texture Upscale");
 		strcpy(p.author, "bahstrike");
+		strcpy(p.authorEmail, "strike@bah.wtf");
+		strcpy(p.attributions, "Hyllian/Jararaca&Copyright 2011, 2012 Hyllian/Jararaca (sergiogdb@gmail.com)|Arwa Arif&Copyright 2014 Arwa Arif (arwaarif1994@gmail.com)|Treeki&Copyright 2015 Treeki (treeki@gmail.com)");
 		strcpy(p.desc, "Provides texture upscaling support");
+		strcpy(p.homepageURL, "https://github.com/bahstrike/smithTextureUpscale");
 		p.smithRequiredVer = SMITHVERSION;
 		p.ver = 100;
 		p.purpose = PP_TEXTUREUPSCALE;
