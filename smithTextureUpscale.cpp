@@ -17,6 +17,8 @@ extern "C"
 		p.ver = 100;
 		p.purpose = PP_TEXTUREUPSCALE;
 
+		//p.authoritykey
+
 		return 1337;
 	}
 
