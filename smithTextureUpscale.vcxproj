@@ -76,7 +76,8 @@ copy $(OutputPath)\smithTextureUpscale.dll c:\smith\bin\release\</Command>
     </Link>
     <PostBuildEvent>
       <Command>copy $(OutputPath)\smithTextureUpscale.dll c:\smith\bin\debug\
-copy $(OutputPath)\smithTextureUpscale.dll c:\smith\bin\release\</Command>
+copy $(OutputPath)\smithTextureUpscale.dll c:\smith\bin\release\
+copy $(OutputPath)\smithTextureUpscale.dll c:\smith\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
